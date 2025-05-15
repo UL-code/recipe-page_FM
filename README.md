@@ -55,6 +55,6 @@ In my future projects, I want to focus on:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/UL-code)
+- Frontend Mentor - [Udara Lakshitha](https://www.frontendmentor.io/profile/UL-code)
 
 
