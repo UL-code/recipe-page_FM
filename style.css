@@ -1,0 +1,282 @@
+/* UTILITY CLASSES */
+
+.brownBold-1{
+    font-weight: 700;
+    color: var(--brown-800);
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ul,ol {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    /* font-weight:normal; */
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+
+
+
+
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+  }
+
+
+
+/* Global styles */
+body{
+    font-family: outfit, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--stone-600);
+    width: 100%;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: space-between;
+    }
+
+
+.menu img{
+    width: 100%;
+    min-width: 310px;
+    height: auto;
+}
+
+.content{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.description{
+    margin: 20px 0;
+}
+
+.description h1{
+    font-family: Young Serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--stone-900);
+    line-height: 1;
+}
+
+.description p{
+    margin-top: 10px;
+}
+
+
+
+
+/* preparation time section */
+
+.preparation-time{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    background-color: var(--rose-50);
+    border-radius: 10px;
+}
+
+.preparation-time h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--rose-800);
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.preparation-time .text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.preparation-time .list-icon {
+    width: 5px;
+    height: 5px;
+    background-color: var(--rose-800);
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+.preparation-time .text span {
+    font-weight: 600;
+    color: var(--stone-600);
+  }
+
+
+
+/* ingredient section */
+
+.ingredients-title, .instructions-title, .nutrition-title{
+    font-family: Young-Serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--brown-800);
+    margin-bottom: 10px;
+}
+
+.ingredients .text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingredients .list-icon{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--brown-800);
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--stone-150);
+    margin: 20px 0;
+}
+
+
+/* instruction section */
+.instructions p{
+    margin-bottom: 10px;
+}
+
+.instructions .text span{
+    font-weight: 600;
+    color: var(--stone-600);
+}
+
+ol {
+  list-style: none;
+  counter-reset: list-item;
+}
+
+ol li {
+  counter-increment: list-item;
+  display: flex;
+  align-items: baseline;
+}
+
+ol li::before {
+  content: counter(list-item) ". ";
+  font-weight: bold;
+  color: var(--brown-800);
+  margin-left:15px ;
+  margin-right: 10px;
+}
+
+
+/* nutrition section */
+table{
+    width: 100%;
+}
+.nutrition{
+    padding-bottom: 20px;
+}
+tr {
+    border-bottom: 1px solid var(--stone-150);
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+td{
+    padding: 0.5rem ;
+}
+
+/* footer section */
+footer{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--rose-800);
+    font-weight: 400;
+}
+
+footer a:hover{
+    font-weight: 600;
+    transition: font-weight 0.3s ease 0s;
+}
+
+
+
+
+@media (min-width: 768px) {
+    body{
+        max-width: 100%;
+        background-color: var(--stone-100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .menu{
+        width: 60%;
+        border-radius: 1em;
+        background-color: var(--white);
+        margin: 10% 20% 5% 20%;
+    }
+
+    .menu img{
+        margin: 5%;
+        width: 90%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+}
